@@ -1,0 +1,323 @@
+@use '_reset.scss';
+@use '_fonts.scss';
+
+$bar:#FFFFFF;
+$text-color:#13253A;
+.btn{
+    width: 33.6rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    color: $bar;
+    border: none;
+    text-align: center;
+    padding: 1.85rem 0;
+}
+
+:root{
+    scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: fonts.$font-poppins;
+    background-color: #F2F2F2;
+}
+h5 , .kpi p{
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #2557AB;
+    margin-bottom: 0.5rem;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0 14rem 0;
+    width: 80%;
+    padding: 0  10%;
+    &__nav-list{
+        display: flex;
+        gap: 5rem;
+        a{       
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.2rem;
+            color: $text-color;         
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.main-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0  10%;
+    margin-bottom: 17.7rem;
+    color: $text-color;
+    &__text{
+        width: 33%;
+    }
+    &__title{    
+        font-weight: 700;
+        font-size: 4.6rem;
+        line-height: 6.3rem;
+        margin-bottom: 1rem;
+    }
+    &__desc{
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+        margin-bottom: 2rem;
+    }
+    &__button{
+        @extend.btn;
+        background-color: #FF7F57;
+    }
+}
+.services{
+    background: $bar;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding:11.9rem 0 10rem 0;
+    color: $text-color;
+    &__title{
+        font-weight: 400;
+        font-size: 3.8rem;
+        line-height: 5.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        h3{
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.7rem;
+            text-align: center;
+            margin: 2rem 0 0.5rem 0;
+            color: #3B4D6C;
+        }
+        p{
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+            text-align: center;
+        }
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 37rem;
+            img{
+                width: 6.4rem;
+            }
+        }
+    }
+}
+.kpi{
+    &__list{
+        display: flex;
+        gap: 15.7rem;
+        margin: 6rem 0;
+        justify-content: space-evenly;
+        li :first-child{
+            font-weight: 400;
+            font-size: 4.6rem;
+            line-height: 6.3rem;
+            color: $text-color;
+            span{
+                color: #FF7F57 !important;
+                }
+        }
+        
+    }
+}
+.about{
+    background-color: $bar;
+    display: flex;
+    padding: 10rem 23.5rem;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0.1rem solid #DCE2E6;
+    color: $text-color;
+    &__content{
+        display: flex;
+        width: 100rem;
+        gap: 3rem;
+        margin-bottom: 6rem;
+        section{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        h3{
+            font-style: italic;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 3rem;
+            mix-blend-mode: normal;
+            opacity: 0.9;
+        }
+        p{
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+            opacity: 0.9;
+        }
+    }
+    &__logos{
+        gap: 7.3rem;
+        display: flex;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 5.2rem;
+        margin-bottom: 3rem;
+    }
+}
+.more-info{
+    background: $bar;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10rem 0;
+    justify-content: space-around;
+    color: $text-color;
+    &__text{
+        width:47rem ;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 52px;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        mix-blend-mode: normal;
+        opacity: 0.9;
+        margin: 2rem 0;
+    }
+    &__list{
+        :nth-child(2){
+            margin: 1.2rem 0;
+        }
+        img{
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-right: 1.2rem;
+        }
+        li{
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 27px;
+        }
+    }
+}
+.get-started{
+    background-color: #FF7F57;
+    height: 43.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h5{
+        color: $bar;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 4.6rem;
+        line-height: 6.3rem;
+        text-align: center;
+        color: #F4F6F7;
+        margin: 0.5rem 0 1rem 0;
+    }
+    &__info{
+        font-weight: 400;
+        width: 77rem;
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $bar;
+    }
+    &__btn{
+        @extend.btn;
+        background-color: #2557AB;
+        box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+        margin: 2rem 0 0rem 0;
+    }
+}
+.contact{
+    background-color:#11364E ;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 14rem;
+    color: $bar;
+    ::placeholder{
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $bar;
+        opacity: 0.2;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        input[type=text] , input[type=email] ,textarea{
+            font-size: 1.6rem;
+            border: none;
+            border-bottom:0.3rem solid $bar ;
+            background-color: #11364E;
+            width: 37rem;
+            height: 5.6rem;
+            margin-bottom: 4rem;
+            color: $bar;
+            opacity: 0.25;
+        }
+        input[type=text]::placeholder , input[type=email]::placeholder ,textarea::placeholder{
+            opacity: 0.5;
+        }
+        label{
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+        }
+        textarea{
+            height: 12rem;
+        }
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 3.8rem;
+        line-height: 5.2rem;
+        text-align: center;
+        padding: 14rem 0 3rem 0;
+    }
+      
+    &__button{
+        @extend.btn;
+        background:#FF7F57;
+        width: 37rem;
+    }  
+}      
+.copyr{
+    text-align: center;
+    background: $text-color;
+    &__text{
+        padding: 1.5rem 0;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: $bar;
+        opacity: 0.8;
+    }
+}
